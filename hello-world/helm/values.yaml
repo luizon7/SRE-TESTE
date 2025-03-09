@@ -1,0 +1,10 @@
+replicaCount: 2
+
+image:
+  repository: "meu-registry/hello-world"
+  tag: "latest"
+  pullPolicy: "IfNotPresent"
+
+service:
+  type: "LoadBalancer"
+  port: 80
