@@ -18,11 +18,11 @@ variable "mb_hello_cluster_name" {
 variable "mb_hello_node_count" {
   description = "Quantidade de nós"
   type        = number
-  default     = 3
+  default     = 1
 }
 
 variable "mb_hello_machine_type" {
   description = "Tipo de máquina do cluster"
   type        = string
-  default     = "e2-medium"
+  default     = "e2-micro"
 }
