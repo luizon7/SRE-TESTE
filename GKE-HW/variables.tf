@@ -13,6 +13,7 @@ variable "mb_hello_cluster_name" {
   description = "Nome do cluster GKE"
   type        = string
   default     = "mb-hello-cluster"
+  deletion_protection = false
 }
 
 variable "mb_hello_node_count" {
