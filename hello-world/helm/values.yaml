@@ -10,5 +10,6 @@ service:
   port: 80
 
 image:
-  repository: "us-central1-docker.pkg.dev/meu-projeto/meu-registry/hello-world"
+  repository: "us-central1-docker.pkg.dev/entrevista-sre-lccarlos01/meu-registry/hello-world"
   tag: "latest"
+  pullPolicy: "Always"
