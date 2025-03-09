@@ -4,8 +4,11 @@ provider "google" {
 }
 
 resource "google_container_cluster" "primary" {
-  name     = var.mb_hello_cluster_name
-  location = var.mb_hello_region
+  name     = var.cluster_name
+  location = var.region
+
+  
+  deletion_protection = false
 
   remove_default_node_pool = true
   initial_node_count       = 1
