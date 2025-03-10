@@ -26,9 +26,9 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t luizon7/sre-teste:latest .
+          docker build -t lccarlos01/sre-teste:latest .
 
       - name: Push Docker Image
         run: |
-          docker push luizon7/sre-teste:latest
+          docker push lccarlos01/sre-teste:latest
 
